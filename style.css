@@ -61,6 +61,12 @@ body {
     font-weight: 100;
 }
 
+.menu__boutton {
+    border: none;
+    background-color: #f6f6f6;
+    color: #3d3a3ade;
+}
+
 .carte__title {
     font-size: 1em;
     font-weight: 100;
