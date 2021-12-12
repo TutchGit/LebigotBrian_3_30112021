@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(./font/Shrikhand-Regular.ttf);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);;
+}
+
+.header__arrow {
+    position: absolute;
+    left: 2rem;
+    width: 2rem;
+    top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(5, 5, 5, 0.76);
+    font-size: 1.5em;
+}
+
+.header__logo {
+    font-family: 'shrikhand', cursive;
+}
+
+.headImg {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.menu {
+    position: relative;
+    margin-top: -3rem;
+    background-color: #f6f6f6;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.menu__start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    font-size: 1.2em;
+    font-family: 'Shrikhand', cursive;
+    font-weight: 100;
+}
+
+.carte__title {
+    font-size: 1em;
+    font-weight: 100;
+    font-family: sans-serif;
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
+.underline {
+    text-decoration: 3px underline lightblue;
+    text-underline-position: under;
+}
+
+.blocMenu {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    background-color: white;
+    margin: 1rem 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 1rem 1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0.75rem;
+    font-family: sans-serif;
+}
+
+.blocMenu__title {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.blocMenu__more {
+    margin: 0;
+    padding-top: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 100;
+    font-size: 0.8em;
+}
+
+.blocMenu__price {
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    color: #3d3a3ade;
+}
+
+.topSpace {
+    margin-top: 2rem;
+}
+
+.wrapBoutton {
+    display: flex;
+    justify-content: center;
+}
+
+.commanderBoutton {
+    border-radius: 5rem 5rem;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+    font-weight: 600;
+    color: white;
+    border: none;
+}
+
+.footer {
+    background-color: #353535;
+    margin-top: 5rem;
+    padding: 0.3rem 1rem;
+}
+
+.footer__logo {
+    color: white;
+    font-family: 'Shrikhand', cursive;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__display {
+    padding-bottom: 10px;
+}
+
+.footer__link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__icon {
+    margin-right: 0.5rem;
+    width: 1.2rem;
+}
