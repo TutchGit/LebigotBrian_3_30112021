@@ -40,6 +40,7 @@ body {
     max-width: 100%;
     width: 100%;
     height: auto;
+    max-height: 18rem;
     object-fit: cover;
 }
 

@@ -4,173 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/7cbe6a21db.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     
-    <header>
-        <a href="#">icon fleche gauche</a>
-        <h1>ohmyfood</h1>
+    <header class="header header--back">
+        <div class="headerContainer">
+            <a href="#"><i class="fas fa-arrow-left header__arrow"></i></a>
+            <h1 class="header__logo">ohmyfood</h1>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Le délice des sens</h2>
-            <button>
-                <i>icon coeur vide</i>
-                <i>icon coeur rempli</i>
+    <img src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="à-la-française" class="headImg">
+
+    <main class="menu">
+        <section class="menu__start">
+            <h2 class="menu__title">Le délice des sens</h2>
+            <button class="menu__boutton">
+                <i class="menu__like menu__like--noFill far fa-heart fa-2x"></i>
+                <i class="menu__like menu__like--Fill fas fa-heart fa-2x"></i>
             </button>
         </section>
 
-        <div>
-            <section> <!-- entrée-->
-                <h3>Entrées</h3>
+        <div class="cartes">
+            <section class="carte"> <!-- entrée-->
+                <h3 class="carte__title"><span class="underline">Entr</span>ées</h3>
 
-                <div> <!-- Tartare thon -->
-                    <header>
-                        <h4>Tartare de thon</h4>
-                        <p>Assaisonné au yuzu</p>
+                <div class="blocMenu display-1"> <!-- Tartare -->
+                    <header class="blocMenu__info">
+                        <h4 class="blocMenu__title">Tartare de thon</h4>
+                        <p class="blocMenu__more">Assaisonné au yuzu</p>
                     </header>
-                    <div>25€</div>
-                    <div> <!-- bloc confirmation-->
-                        <div> <!-- animation -->
-                            <i>icon validation</i>
-                        </div>
-                    </div>
+                    <div class="blocMenu__price">25€</div>
                 </div>
 
-                <div> <!-- Bouchée -->
-                    <header>
-                        <h4>Bouchée de homard croustillant</h4>
-                        <p>Et sa farandole de petits légumes</p>
+                <div class="blocMenu display-2"> <!-- Velouté -->
+                    <header class="blocMenu__info">
+                        <h4 class="blocMenu__title">Bouchée de homard croustillant</h4>
+                        <p class="blocMenu__more">Et sa farandole de petits légumes</p>
                     </header>
-                    <div>35€</div>
-                    <div> <!-- bloc confirmation-->
-                        <div> <!-- animation -->
-                            <i>icon validation</i>
-                        </div>
-                    </div>
+                    <div class="blocMenu__price">35€</div>
                 </div>
 
-                <div> <!-- Velouté cèpes -->
-                    <header>
-                        <h4>Velouté de cèpes</h4>
-                        <p>Aux truffes</p>
+                <div class="blocMenu display-3"> <!-- soupe oignon -->
+                    <header class="blocMenu__info">
+                        <h4 class="blocMenu__title">Velouté de cèpes</h4>
+                        <p class="blocMenu__more">Aux truffes</p>
                     </header>
-                    <div>20€</div>
-                    <div> <!-- bloc confirmation-->
-                        <div> <!-- animation -->
-                            <i>icon validation</i>
-                        </div>
-                    </div>
+                    <div class="blocMenu__price">20€</div>
                 </div>
             </section> <!-- fin entrées-->
 
-            <section> <!--plats-->
-
-                <div> <!-- Poulet rôti -->
-                    <header>
-                        <h4>Poulet rôti aux herbes de provence</h4>
-                        <p>Et sa crème de truffe</p>
+            <section class="carte"> <!--plats-->
+                <h3 class="carte__title topSpace"><span class="underline">Plat</span>s</h3>
+                <div class="blocMenu display-4"> <!-- St-Jacques -->
+                    <header class="blocMenu__info">
+                        <h4 class="blocMenu__title">Poulet rôti aux herbes de provence</h4>
+                        <p class="blocMenu__more">Et sa crème de truffe</p>
                     </header>
-                    <div>40€</div>
-                    <div> <!-- bloc confirmation-->
-                        <div> <!-- animation -->
-                            <i>icon validation</i>
-                        </div>
-                    </div>
+                    <div class="blocMenu__price">40€</div>
                 </div>
 
-                <div> <!-- Langouste -->
+                <div class="blocMenu display-5"> <!-- Parmentier -->
                     <header>
-                        <h4>Langouste rôtie</h4>
-                        <p>Et ses légumes de saison</p>
-                    </header>
-                    <div>35€</div>
-                    <div> <!-- bloc confirmation-->
-                        <div> <!-- animation -->
-                            <i>icon validation</i>
-                        </div>
-                    </div>
+                        <h4 class="blocMenu__title">Langouste rôtie</h4>
+                        <p class="blocMenu__more">Et ses légumes de saison</p>
+                    </header class="blocMenu__info">
+                    <div class="blocMenu__price">35€</div>
                 </div>
 
-                <div> <!-- Côte boeuf -->
-                    <header>
-                        <h4>Côte de boeuf angus</h4>
-                        <p>Et sa purée de panais</p>
+                <div class="blocMenu display-6"> <!-- Pigeonneau -->
+                    <header class="blocMenu__info">
+                        <h4 class="blocMenu__title">Côte de boeuf angus</h4>
+                        <p class="blocMenu__more">Et sa purée de panais</p>
                     </header>
-                    <div>44€</div>
-                    <div> <!-- bloc confirmation-->
-                        <div> <!-- animation -->
-                            <i>icon validation</i>
-                        </div>
-                    </div>
+                    <div class="blocMenu__price">44€</div>
                 </div>
             </section> <!-- fin plats -->
 
-            <section> <!-- desserts -->
-
-                <div> <!-- Farandole -->
-                    <header>
-                        <h4>Farandole de desserts</h4>
-                        <p>Du chef</p>
+            <section class="carte"> <!-- desserts -->
+                <h3 class="carte__title topSpace"><span class="underline">Dess</span>erts</h3>
+                <div class="blocMenu display-7"> <!-- Pétales -->
+                    <header class="blocMenu__info">
+                        <h4 class="blocMenu__title">Farandole de desserts</h4>
+                        <p class="blocMenu__more">Du chef</p>
                     </header>
-                    <div>18€</div>
-                    <div> <!-- bloc confirmation-->
-                        <div> <!-- animation -->
-                            <i>icon validation</i>
-                        </div>
-                    </div>
+                    <div class="blocMenu__price">18€</div>
                 </div>
 
-                <div> <!-- Crème brulée -->
-                    <header>
-                        <h4>Crème brulée</h4>
-                        <p>Revisitée</p>
+                <div class="blocMenu display-8"> <!-- Fondant -->
+                    <header class="blocMenu__info">
+                        <h4 class="blocMenu__title">Crème brulée</h4>
+                        <p class="blocMenu__more">Revisitée</p>
                     </header>
-                    <div>22€</div>
-                    <div> <!-- bloc confirmation-->
-                        <div> <!-- animation -->
-                            <i>icon validation</i>
-                        </div>
-                    </div>
+                    <div class="blocMenu__price">22€</div>
                 </div>
 
-                <div> <!-- Tiramisu -->
-                    <header>
-                        <h4>Tiramisu</h4>
-                        <p>À la noisette</p>
+                <div class="blocMenu display-9"> <!-- Millefeuille -->
+                    <header class="blocMenu__info">
+                        <h4 class="blocMenu__title">Tiramisu</h4>
+                        <p class="blocMenu__more">Â la noisette</p>
                     </header>
-                    <div>23€</div>
-                    <div> <!-- bloc confirmation-->
-                        <div> <!-- animation -->
-                            <i>icon validation</i>
-                        </div>
-                    </div>
+                    <div class="blocMenu__price">23€</div>
                 </div>
             </section> <!-- fin desserts -->
         </div>
 
-        <div>
-            <button>Commander</button>
+        <div class="wrapBoutton">
+            <button class="commanderBoutton">Commander</button>
         </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div>
-            <p>ohmyfood</p>
-            <ul>
-                <li>
-                    <a href="#"><i>icon ustensils</i>Proposer un restaurant</a>
+            <p class="footer__logo">ohmyfood</p>
+            <ul class="footer__list">
+                <li class="footer__display">
+                    <a class="footer__link" href="#"><i class="footer__icon fas fa-utensils"></i>Proposer un restaurant</a>
                 </li>
-                <li>
-                    <a href="#"><i>icon main</i>Devenir partenaire</a>
+                <li class="footer__display">
+                    <a class="footer__link" href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a>
                 </li>
-                <li>
-                    <a href="#">Mentions légales</a>
+                <li class="footer__display">
+                    <a class="footer__link" href="#">Mentions légales</a>
                 </li>
-                <li>
-                    <a href="#">Contact</a>
+                <li class="footer__display">
+                    <a class="footer__link" href="mailto:contact@ohmyfood.com">Contact</a>
                 </li>
             </ul>
         </div>
