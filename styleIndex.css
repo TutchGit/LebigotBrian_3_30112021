@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(./font/Shrikhand-Regular.ttf);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.header__logo {
+    font-family: 'shrikhand', cursive;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: rgb(243, 243, 243);
+}
+
+.location__icon {
+    margin-right: 1rem;
+}
+
+.location__text {
+    font-weight: bolder;
+}
+
+.menu {
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+    padding: 2rem;
+}
+
+.menu__title {
+    margin-top: 0;
+}
+
+.menu__text {
+    font-weight: lighter;
+    padding-bottom: 2rem;
+}
+
+.menu__btn {
+    border-radius: 5rem 5rem;
+    padding: 1rem 1rem;
+    background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+    font-weight: 600;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.fonction {
+    padding: 2rem;
+}
+
+.fonction__title {
+    margin-top: 0;
+}
+
+.fonction__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fonction__li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f6f6f6;
+    border-radius: 1.25rem;
+    padding: 0.75rem;
+    margin: 1rem 0 1rem 0.75rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+}
+
+.fonction__icon {
+    
+    font-size: 1.5em;
+    color: #5f5d5d;
+}
+
+.fonction__text {
+    margin-right: 3rem;
+    font-weight: bolder;
+}
+
+.fonction__count {
+    background-color: #9356DC;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    left: 2.3rem;
+}
+
+.restaurants {
+    padding: 2rem;
+    margin: 0;
+    background-color: #f6f6f6;
+}
+
+.cartes__link {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 1rem;
+    color: inherit;
+    position: relative;
+}
+
+.cartes__img {
+    object-fit: cover;
+    width: 100%;
+    height: 10rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.cartes__new {
+    position: absolute;
+    top: -9rem;
+    left: 13rem;
+    background-color: #99E2D0;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.2rem;
+    color: hsl(165, 56%, 24%);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+}
+
+.cartes__bloc {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.cartes__content {
+    flex: 1;
+}
+
+.cartes__content__title {
+    margin: 0 0 0.25rem 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cartes__content__text {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.cartes__btn {
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    padding: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.footer {
+    background-color: #353535;
+    margin-top: 3rem;
+    padding: 0.3rem 1rem;
+}
+
+.footer__logo {
+    color: white;
+    font-family: 'Shrikhand', 'cursive';
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__display {
+    padding-bottom: 10px;
+}
+
+.footer__link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__icon {
+    margin-right: 0.5rem;
+    width: 1.2rem;
+}
