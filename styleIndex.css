@@ -147,8 +147,8 @@ html, body {
     position: absolute;
     right: 5%;
     background-color: #99E2D0;
-    padding: 0.5rem 0.8rem;
-    border-radius: 0.2rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.1rem;
     color: hsl(165, 56%, 24%);
     font-weight: bold;
     text-transform: uppercase;
