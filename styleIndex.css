@@ -10,6 +10,10 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+.location__title {
+    display: none;
+}
+
 .header {
     display: flex;
     justify-content: center;
