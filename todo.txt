@@ -1,14 +1,9 @@
-changer sans-serif en roboto
-faire les lien <a></a>
 faire le box-shadow
 faire animations like
 faire animations validation
 
-faire la page d'accueil
 faire le loader
 
 
 Faire le mediaqueri
 changer les commentaires de html
-
-Faire le scss
