@@ -124,12 +124,16 @@ html, body {
     background-color: #f6f6f6;
 }
 
+.bloc__carte {
+    position: relative;
+}
+
 .cartes__link {
     text-decoration: none;
     background-color: white;
     border-radius: 1rem;
     color: inherit;
-    position: relative;
+    
 }
 
 .cartes__img {
@@ -141,8 +145,7 @@ html, body {
 
 .cartes__new {
     position: absolute;
-    top: -9rem;
-    left: 13rem;
+    right: 5%;
     background-color: #99E2D0;
     padding: 0.5rem 0.8rem;
     border-radius: 0.2rem;
