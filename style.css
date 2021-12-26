@@ -63,6 +63,22 @@ html, body {
     border: none;
     background-color: #f6f6f6;
     color: #3d3a3ade;
+    font-size: 30px;
+    
+}
+
+.menu__boutton i {
+    cursor: pointer;
+}
+
+.menu__boutton i:hover{
+    font-weight: 900;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: 0.5s ease-in-out;
+    animation-delay: 0.2s;
+    transition: 0.5s ease-in-out;
 }
 
 .carte__title {
@@ -83,16 +99,51 @@ html, body {
     justify-content: space-between;
     border-radius: 1rem;
     background-color: white;
-    margin: 1rem 0;
     overflow: hidden;
     max-width: 100%;
     margin: 1rem 1rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    padding: 0.75rem;
     font-family: sans-serif;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+}
+
+.display-1 {
+    animation: apparition 1s forwards;
+}
+
+.display-2 {
+    animation: apparition 1s forwards 0.5s;
+}
+
+.display-3 {
+    animation: apparition 1s forwards 1s;
+}
+
+
+@keyframes apparition {
+    
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    50% {
+        display: block;
+        opacity: 0.5;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+.blocMenu__info {
+    flex: 1;
+    padding: 0.75rem;
 }
 
 .blocMenu__title {
@@ -113,13 +164,39 @@ html, body {
 }
 
 .blocMenu__price {
-    margin: 0;
     display: flex;
     align-items: flex-end;
     font-weight: bold;
     color: #3d3a3ade;
+    padding: 0.75rem;
+    transition: margin-right 400ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
 
+.blocMenu:hover .blocMenu__price {
+    margin-right: 70px;
+}
+
+.blocMenu__confirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 60px;
+    height: 100%;
+    background: #99e2d0;
+    transform: scale(0);
+    transition: transform 400ms cubic-bezier(0.3, 0.7, 0.4, 1.5), right 400ms ease-in-out;
+}
+
+.blocMenu:hover .blocMenu__confirm {
+    transform: scale(1);
+    right: 0;
+}
+  
 .topSpace {
     margin-top: 2rem;
 }
