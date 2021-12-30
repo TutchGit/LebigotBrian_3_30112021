@@ -1,9 +1,3 @@
-faire animations like
-faire animations validation
-
-faire le loader
-
-
 Faire le mediaqueri
 
 .loader {
