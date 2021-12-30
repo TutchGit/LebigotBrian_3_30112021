@@ -277,6 +277,10 @@ html, body {
         min-width: 900px;
     }
 
+    .commanderBoutton {
+        padding: 6rem 6rem;
+    }
+
     .menu__start {
         margin-bottom: 6rem;
         display: flex;
