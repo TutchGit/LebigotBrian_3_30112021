@@ -276,6 +276,11 @@ html, body {
 }
 
 @media (min-width: 1024px) {
+
+    .header__arrow {
+        font-size: 5em;
+    }
+
     main {
         margin: auto;
         min-width: 900px;

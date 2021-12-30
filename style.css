@@ -218,6 +218,13 @@ html, body {
     color: white;
     border: none;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    transition: transform 400ms;
+}
+
+.commanderBoutton:hover {
+    transform: scale(1.2);
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom, #ff79d9f3 0%, #9256dce8 100%);
 }
 
 .footer {
@@ -258,6 +265,13 @@ html, body {
 }
 
 @media (min-width: 1024px) {
+
+    .header__arrow {
+        font-size: 5em;
+        width: 5rem;
+        left: 5rem;
+        top: 5rem;
+    }
 
     main {
         min-width: 900px;
