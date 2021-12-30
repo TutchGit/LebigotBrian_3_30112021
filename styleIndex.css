@@ -115,6 +115,13 @@ html, body {
     border: none;
     text-decoration: none;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    transition: transform 400ms;
+}
+
+.menu__btn:hover {
+    transform: scale(1.2);
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom, #ff79d9f3 0%, #9256dce8 100%);
 }
 
 .fonction {
@@ -285,74 +292,113 @@ html, body {
         margin: auto;
         min-width: 900px;
     }
+
     .header__logo {
         font-size: 5em;
     }
+
+    .location__icon {
+        font-size: 3em;
+    }
+
     .location__text {
         font-size: 3em;
+
     }
     .menu {
         font-size: 4em;
     }
+
+    .menu__btn {
+        padding: 2rem 2rem;
+    }
+
     .fonction__title {
         display: flex;
         justify-content: center;
         font-size: 5em;
         margin-top: 5rem;
     }
+
     .fonction__list {
         display: flex;
         justify-content: center;
     }
+
     .fonction__li {
         font-size: 3em;
     }
+
     .fonction__count {
         visibility: hidden;
     }
+
     .fonction__icon {
         margin-left: 1rem;
     }
+
     .fonction__text {
         margin-left: 2rem;
     }
+
     .restaurants__title {
         display: flex;
         justify-content: center;
         font-size: 5em;
     }
+
     .restaurants__cartes {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .bloc__carte {
         width: 35%;
         height: auto;
         margin: 0 0 3% 1%;
     }
+
     .cartes__img {
         height: 50rem;
     }
+
     .cartes__new {
         font-size: 4em;
     }
+
     .cartes__bloc {
         font-size: 3em;
     }
+
     .cartes__content {
         margin-left: 5rem;
     }
+
     .menu__like {
         margin-right: 10rem;
     }
+
     .footer {
         font-size: 4em;
+        display: flex;
+        justify-content: center;
     }
+
+    .footer__logo {
+        display: flex;
+        justify-content: center;
+    }
+
     .footer__list {
-        text-align: center;
+        display: flex;
     }
+
+    .footer__link {
+        margin-right: 10rem;
+    }
+
     .footer__icon {
-        margin-right: 5rem;
+        margin-right: 4rem;
     }
 }
