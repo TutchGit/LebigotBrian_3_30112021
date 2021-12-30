@@ -282,41 +282,42 @@ html, body {
 
 @media (min-width: 1024px) {
 
-    .header__arrow {
-        font-size: 5em;
-    }
-
     main {
         margin: auto;
         min-width: 900px;
     }
 
     .header__logo {
-        font-size: 5em;
+        font-size: 2em;
     }
 
     .location__icon {
-        font-size: 3em;
+        font-size: 1em;
     }
 
     .location__text {
-        font-size: 3em;
+        font-size: 1em;
 
     }
     .menu {
-        font-size: 4em;
+        font-size: 1.5em;
     }
 
     .menu__btn {
         font-size: 0.8em;
-        padding: 3rem 6rem;
+        padding: 1rem 2rem;
+    }
+
+    .fonction {
+        padding: 0;
+        margin-top: 1rem;
     }
 
     .fonction__title {
         display: flex;
         justify-content: center;
-        font-size: 5em;
-        margin-top: 5rem;
+        font-size: 2em;
+        margin-top: 0;
     }
 
     .fonction__list {
@@ -325,7 +326,7 @@ html, body {
     }
 
     .fonction__li {
-        font-size: 3em;
+        font-size: 1em;
     }
 
     .fonction__count {
@@ -343,7 +344,7 @@ html, body {
     .restaurants__title {
         display: flex;
         justify-content: center;
-        font-size: 5em;
+        font-size: 2em;
     }
 
     .restaurants__cartes {
@@ -359,27 +360,27 @@ html, body {
     }
 
     .cartes__img {
-        height: 50rem;
+        height: 15rem;
     }
 
     .cartes__new {
-        font-size: 4em;
+        font-size: 1em;
     }
 
     .cartes__bloc {
-        font-size: 3em;
+        font-size: 1em;
     }
 
     .cartes__content {
-        margin-left: 5rem;
+        margin-left: 1rem;
     }
 
     .menu__like {
-        margin-right: 10rem;
+        margin-right: 2rem;
     }
 
     .footer {
-        font-size: 4em;
+        font-size: 2em;
         display: flex;
         justify-content: center;
     }
@@ -394,10 +395,10 @@ html, body {
     }
 
     .footer__link {
-        margin-right: 10rem;
+        margin-right: 5rem;
     }
 
     .footer__icon {
-        margin-right: 4rem;
+        margin-right: 2rem;
     }
 }

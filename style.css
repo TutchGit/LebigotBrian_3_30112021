@@ -267,18 +267,14 @@ html, body {
 @media (min-width: 1024px) {
 
     .header__arrow {
-        font-size: 5em;
-        width: 5rem;
-        left: 5rem;
-        top: 5rem;
+        font-size: 2em;
+        width: 2rem;
+        left: 2rem;
+        top: 2rem;
     }
 
     main {
         min-width: 900px;
-    }
-
-    .commanderBoutton {
-        padding: 6rem 6rem;
     }
 
     .menu__start {
@@ -289,7 +285,7 @@ html, body {
     }
 
     .fa-heart {
-        font-size: 4em;
+        font-size: 2em;
         margin-left: 6rem;
     }
     
@@ -301,48 +297,60 @@ html, body {
     }
 
     .header__logo {
-        font-size: 5em;
+        font-size: 2em;
     }
+
     .headImg {
-        max-height: 70rem ;
+        max-height: 20rem ;
     }
+
+    .menu__start {
+        margin-bottom: 1rem;
+    }
+
     .menu__title {
-        font-size: 4em;
-        margin-top: 3rem;
+        font-size: 1.5em;
+        margin-top: 1rem;
     }
 
     .carte__title {
-        font-size: 4em;
+        font-size: 1.2em;
+    }
+
+    .topSpace {
+        margin-top: 0;
     }
 
     .blocMenu {
-        font-size: 4em;
-        max-width: 4000rem;
-        margin-bottom: 4rem;
-        width: 80rem;
+        font-size: 1.2em;
+        margin-bottom: 2rem;
+        width: 25rem;
+        max-width: 35rem;
     }
 
     .blocMenu:hover .blocMenu__price {
-        margin-right: 170px;
+        margin-right: 60px;
     }
 
     .blocMenu__confirm {
-        width: 150px;
+        width: 60px;
     }
 
     .wrapBoutton {
-        margin-top: 4rem;
+        margin-top: 1rem;
     }
 
     .commanderBoutton {
-        font-size: 4em;
-        padding: 3rem 8rem;
+        font-size: 1.2em;
+        padding: 1rem 3rem;
+        margin-top: 0;
     }
 
     .footer {
-        font-size: 4em;
+        font-size: 2em;
         display: flex;
         justify-content: center;
+        margin-top: 4rem;
     }
 
     .footer__logo {
@@ -355,10 +363,10 @@ html, body {
     }
 
     .footer__link {
-        margin-right: 10rem;
+        margin-right: 5rem;
     }
 
     .footer__icon {
-        margin-right: 4rem;
+        margin-right: 2rem;
     }
 }
