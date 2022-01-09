@@ -24,7 +24,6 @@ html, body {
     justify-content: center;
     align-items: center;
     animation: loader 3s linear;
-    transform: scaleX(1);
 }
 
 .loader__bar {
@@ -35,14 +34,9 @@ html, body {
     height: 20px;
     width: 80%;
     border: solid 2px black;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform 2.8s cubic-bezier(.32,0,.07,1);
     z-index: 100;
-}
-
-.loader__bar::after {
-    transform: scaleX(1);
+    animation: loader__bar 3s linear;
+    transform-origin: right;
 }
 
 @keyframes loader {
@@ -57,6 +51,19 @@ html, body {
         visibility: hidden;
     } 
 }
+
+@keyframes loader__bar {
+
+    0% {
+        transform: scaleX(100%);
+    }
+    50% {
+        transform: scaleX(50%);
+    }
+    100% {
+        transform: scaleX(0%);
+    }
+} 
 
 .location__title {
     display: none;
