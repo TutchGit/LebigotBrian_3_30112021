@@ -55,13 +55,13 @@ html, body {
 @keyframes loader__bar {
 
     0% {
-        transform: scaleX(100%);
+        transform: scaleX(1);
     }
     50% {
-        transform: scaleX(50%);
+        transform: scaleX(0.5);
     }
     100% {
-        transform: scaleX(0%);
+        transform: scaleX(0);
     }
 } 
 
@@ -124,7 +124,7 @@ html, body {
     transition: transform 400ms;
 }
 
-.menu__btn:hover {
+.menu__btn:active {
     transform: scale(1.2);
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
     background-image: linear-gradient(to bottom, #ff79d9f3 0%, #9256dce8 100%);
@@ -154,6 +154,10 @@ html, body {
     margin: 1rem 0 1rem 0.75rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
     position: relative;
+}
+
+.fonction__li:active .fonction__icon {
+    color: #9356DC;
 }
 
 .fonction__icon {
@@ -219,6 +223,7 @@ html, body {
 .cartes__bloc {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem;
     margin-bottom: 1rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
@@ -241,13 +246,23 @@ html, body {
 }
 
 .cartes__btn {
-    height: 2rem;
-    width: 2rem;
     background-color: transparent;
-    padding: 0;
     display:flex;
     align-items:center;
     justify-content:center;
+}
+
+.fa-heart {
+    background-color: transparent;
+    transition: color 500ms ease-in;
+    font-size: 2em;
+}
+    
+.fa-heart:active {
+    background-image: linear-gradient(#ff79DA, #9356dc);
+    font-weight: bold;
+    color: transparent;
+    -webkit-background-clip: text;
 }
 
 .footer {
@@ -315,6 +330,12 @@ html, body {
         padding: 1rem 2rem;
     }
 
+    .menu__btn:hover {
+        transform: scale(1.2);
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+        background-image: linear-gradient(to bottom, #ff79d9f3 0%, #9256dce8 100%);
+    }
+
     .fonction {
         padding: 0;
         margin-top: 1rem;
@@ -334,6 +355,10 @@ html, body {
 
     .fonction__li {
         font-size: 1em;
+    }
+
+    .fonction__li:hover .fonction__icon {
+        color: #9356DC;
     }
 
     .fonction__count {
@@ -388,6 +413,18 @@ html, body {
 
     .menu__like {
         margin-right: 2rem;
+    }
+
+    .fa-heart {
+        font-size: 2em;
+        margin-left: 6rem;
+    }
+
+    .fa-heart:hover {
+        background-image: linear-gradient(#ff79DA, #9356dc);
+        font-weight: bold;
+        color: transparent;
+        -webkit-background-clip: text;
     }
 
     .footer {

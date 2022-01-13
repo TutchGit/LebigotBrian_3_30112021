@@ -1,0 +1,5 @@
+w3c css
+click phone (check, toute les aniamtions se lancent si click desssu)
+hover pc (check, toute les animations se lancent si curseur passe dessus)
+3 bouttons pages d'accueil (check, couleur change)
+coeur accueil (check, animation coeur sans etre lien)
