@@ -64,6 +64,13 @@ html, body {
     transition: color 500ms ease-in;
     font-size: 1.5em;
 }
+
+.fa-heart:hover {
+    background-image: linear-gradient(#ff79DA, #9356dc);
+    font-weight: bold;
+    color: transparent;
+    -webkit-background-clip: text;
+}
     
 .fa-heart:active {
     background-image: linear-gradient(#ff79DA, #9356dc);
@@ -164,6 +171,10 @@ html, body {
     transition: margin-right 400ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
 
+.blocMenu:hover .blocMenu__price {
+    margin-right: 70px;
+}
+
 .blocMenu:active .blocMenu__price {
     margin-right: 70px;
 }
@@ -186,6 +197,19 @@ html, body {
 
 .blocMenu__confirm i {
     transition: transform 400ms ease-in-out;
+}
+
+.blocMenu:hover i {
+    transform: rotate(360deg);
+}
+
+.blocMenu:hover .blocMenu__confirm {
+    transform: scale(1);
+    right: 0;
+}
+
+.blocMenu__confirm:hover i {
+    transform: rotate(360deg);
 }
 
 .blocMenu:active i {
@@ -220,6 +244,12 @@ html, body {
     border: none;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
     transition: transform 400ms;
+}
+
+.commanderBoutton:hover {
+    transform: scale(1.2);
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom, #ff79d9f3 0%, #9256dce8 100%);
 }
 
 .commanderBoutton:active {
